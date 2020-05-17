@@ -12,4 +12,4 @@ I will be adding more elements to this index.
   - *Ordered*
     - [x] Delete elements
     - [x] Insert elements
-    - [ ] Modify elements
+    - [x] Modify elements
