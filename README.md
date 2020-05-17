@@ -6,7 +6,7 @@ A lot of algorithms written in Ruby.
 
 I will be adding more elements to this index.
 
-- [x] **Arrays**
+- [x] **Arrays** (*Some operations*)
   - *Disordered*
     - [x] Delete elements
   - *Ordered*
