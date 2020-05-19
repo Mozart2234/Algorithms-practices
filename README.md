@@ -1,4 +1,4 @@
-# Algorithms-practices (Ruby Version)
+# Algorithms and Data Structures (Ruby Version)
 
 A lot of algorithms written in Ruby.
 
@@ -6,10 +6,12 @@ A lot of algorithms written in Ruby.
 
 I will be adding more elements to this index.
 
-- [x] **Arrays** (*Some operations*)
-  - *Disordered*
-    - [x] Delete elements
-  - *Ordered*
-    - [x] Delete elements
-    - [x] Insert elements
-    - [x] Modify elements
+- **Arrays** (*Some operations*)
+  - One Dimensional
+    - *Disordered*
+      - [x] Delete elements
+    - *Ordered*
+      - [x] Delete elements
+      - [x] Insert elements
+      - [x] Modify elements
+  - Multidimensional
