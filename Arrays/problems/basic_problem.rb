@@ -26,11 +26,7 @@ end
 avg = total/harvests.size
 
 harvests.each do |amount|
-  if avg > amount
-    higher += 1
-  else
-    lower += 1
-  end
+  avg > amount ? higher += 1 : lower += 1
 end
 
 p "The anual average is #{avg}"
