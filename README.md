@@ -7,6 +7,7 @@ A lot of algorithms written in Ruby.
 I will be adding more elements to this index.
 
 - **Arrays** (*Some operations*)
+  - [x] Problems
   - One Dimensional
     - *Disordered*
       - [x] Delete elements
@@ -15,3 +16,4 @@ I will be adding more elements to this index.
       - [x] Insert elements
       - [x] Modify elements
   - Multidimensional
+    - [x] Read elements
