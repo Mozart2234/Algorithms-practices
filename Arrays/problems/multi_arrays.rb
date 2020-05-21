@@ -26,71 +26,71 @@ def delete_an_element(arr, index)
   end
   new_arr
 end
-# ## FIRST EXERCISE
-# puts providers
-# puts "Insert the name of provider for show you when live and how many articles has."
-# name_provider = gets.chomp.downcase
-# index_found_provider = find_provider(providers, name_provider)
+## FIRST EXERCISE
+puts providers
+puts "Insert the name of provider for show you when live and how many articles has."
+name_provider = gets.chomp.downcase
+index_found_provider = find_provider(providers, name_provider)
 
-# if index_found_provider.negative?
-#   p "Provider not found"
-# else
-#   puts "The provider #{providers[index_found_provider]} live in #{cities[index_found_provider]} and has #{total_articles[index_found_provider]} articles"
-# end
+if index_found_provider.negative?
+  p "Provider not found"
+else
+  puts "The provider #{providers[index_found_provider]} live in #{cities[index_found_provider]} and has #{total_articles[index_found_provider]} articles"
+end
 
-# ## SECOND EXERCISE
-# puts providers
-# puts "Insert the name of provider of you need to change"
-# name_provider = gets.chomp.downcase
-# index_found_provider = find_provider(providers, name_provider)
-# if index_found_provider.negative?
-#   p "Provider not found"
-# else
-#   puts "Insert the name of new city"
-#   new_city = gets.chomp
-#   cities[index_found_provider] = new_city
-#   puts "The provider #{providers[index_found_provider]} now live in #{cities[index_found_provider]}"
-# end
+## SECOND EXERCISE
+puts providers
+puts "Insert the name of provider of you need to change"
+name_provider = gets.chomp.downcase
+index_found_provider = find_provider(providers, name_provider)
+if index_found_provider.negative?
+  p "Provider not found"
+else
+  puts "Insert the name of new city"
+  new_city = gets.chomp
+  cities[index_found_provider] = new_city
+  puts "The provider #{providers[index_found_provider]} now live in #{cities[index_found_provider]}"
+end
 
-## THIRD EXERCISE
-# puts providers
-# puts "Insert the name of provider of you need to change"
-# name_provider = gets.chomp.downcase
-# index_found_provider = find_provider(providers, name_provider)
-# if index_found_provider.negative?
-#   p "Provider not found"
-# else
-#   puts "Insert the operation type for your articles and then insert the quantity"
-#   puts "1 = Increase"
-#   puts "2 = Decrease"
-#   option = gets.chomp.to_i
-#   # ruby version [1,2,].include?(option)
-#   if option == 1
-#     quantity = gets.chomp.to_i
-#     total_articles[index_found_provider] += quantity
-#   elsif option == 2
-#     quantity = gets.chomp.to_i
-#     total_articles[index_found_provider] -= quantity
-#   else
-#     puts "Incorrect option"
-#   end
-#   puts "The provider #{providers[index_found_provider]} now has #{total_articles[index_found_provider]} articles"
-# end
+# THIRD EXERCISE
+puts providers
+puts "Insert the name of provider of you need to change"
+name_provider = gets.chomp.downcase
+index_found_provider = find_provider(providers, name_provider)
+if index_found_provider.negative?
+  p "Provider not found"
+else
+  puts "Insert the operation type for your articles and then insert the quantity"
+  puts "1 = Increase"
+  puts "2 = Decrease"
+  option = gets.chomp.to_i
+  # ruby version [1,2,].include?(option)
+  if option == 1
+    quantity = gets.chomp.to_i
+    total_articles[index_found_provider] += quantity
+  elsif option == 2
+    quantity = gets.chomp.to_i
+    total_articles[index_found_provider] -= quantity
+  else
+    puts "Incorrect option"
+  end
+  puts "The provider #{providers[index_found_provider]} now has #{total_articles[index_found_provider]} articles"
+end
 
-## FOUR EXERCISE
-# puts providers
-# puts "Insert the name of provider of you need insert"
-# name_provider = gets.chomp
-# puts "Insert the city of #{name_provider}"
-# city = gets.chomp
-# puts "Insert the total of articles of #{name_provider}"
-# total = gets.chomp.to_i
+# FOUR EXERCISE
+puts providers
+puts "Insert the name of provider of you need insert"
+name_provider = gets.chomp
+puts "Insert the city of #{name_provider}"
+city = gets.chomp
+puts "Insert the total of articles of #{name_provider}"
+total = gets.chomp.to_i
 
-# providers.push(name_provider)
-# cities.push(city)
-# total_articles.push(total)
+providers.push(name_provider)
+cities.push(city)
+total_articles.push(total)
 
-# print_providers(providers, cities, total_articles)
+print_providers(providers, cities, total_articles)
 
 ## FIVE EXERCISE
 puts providers
