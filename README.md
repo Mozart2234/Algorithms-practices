@@ -17,3 +17,5 @@ I will be adding more elements to this index.
       - [x] Modify elements
   - Multidimensional
     - [x] Read elements
+- **Sorting**
+  - [x] Insert Sort
