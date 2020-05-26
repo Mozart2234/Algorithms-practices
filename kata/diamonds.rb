@@ -1,5 +1,6 @@
 def diamond(n)
   return nil if n <= 0 || n % 2 == 0
+
   diamonds = ""
   identifier = 1
   middle = (n + 1) / 2
