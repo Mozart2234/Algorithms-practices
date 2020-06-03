@@ -1,4 +1,4 @@
-example_arr = [10, 24, 76, 73, 72, 1, 9]
+example_arr = [10, 24, 76, 73, 72, 1, 9, 23, 24, 100]
 
 def merge_sort(arr)
   size_arr = arr.size
