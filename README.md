@@ -19,3 +19,5 @@ I will be adding more elements to this index.
     - [x] Read elements
 - **Sorting**
   - [x] Insert Sort
+  - [x] Selection Sort
+  - [x] Merge Sort
