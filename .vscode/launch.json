@@ -5,6 +5,13 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "CodeLens (Launch) - RandomSeq",
+      "request": "launch",
+      "mainClass": "RandomSeq",
+      "projectName": "Algorithms-practices_c6b81b8d"
+    },
+    {
       "name": "Debug Local File",
       "type": "Ruby",
       "request": "launch",
