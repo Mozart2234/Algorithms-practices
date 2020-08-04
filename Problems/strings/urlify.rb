@@ -19,7 +19,7 @@ def replace_spaces(str, size)
   number_of_spaces = count_of_char(str, 0, size, ' ')
   new_index = size - 1 + number_of_spaces * 2
 
-  str[new_index + 1] = '\0' if new_index + 1 < str.length
+  str[new_index + 1] = '' if new_index + 1 < str.length
 
   (size - 1).downto(0) do |i|
     if str[i] == ' '
@@ -48,4 +48,4 @@ p urlify('Mr John Smith', 13)
 
 p urlify_ruby_version('Mr John Smith', 13)
 
-p replace_spaces('Mr John Smith   ', 13)
+p replace_spaces('Mr John Smith      ', 13)
