@@ -4,7 +4,7 @@ A lot of algorithms written in Ruby.
 
 ## Content
 
-I will be adding more elements to this index.
+I will be adding more elements to this index as soon as possible.
 
 - **Arrays** (*Some operations*)
   - [x] Problems
@@ -21,3 +21,7 @@ I will be adding more elements to this index.
   - [x] Insert Sort
   - [x] Selection Sort
   - [x] Merge Sort
+- **Linked List**
+  - [x] Doubly Linked List
+- **Problems**
+  - [x] Array/Hash Tables
