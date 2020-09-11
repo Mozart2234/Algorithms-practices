@@ -22,6 +22,7 @@ I will be adding more elements to this index as soon as possible.
   - [x] Selection Sort
   - [x] Merge Sort
 - **Linked List**
+  - [x] Singly Linked List
   - [x] Doubly Linked List
 - **Problems**
   - [x] Array/Hash Tables
