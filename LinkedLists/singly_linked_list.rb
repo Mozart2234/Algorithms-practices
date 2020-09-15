@@ -1,16 +1,15 @@
 # This class respresents a Node for a DoublyLinkedList
 class Node
-  attr_accessor :prev, :next
+  attr_accessor :next
   attr_reader :data
 
   def initialize(data)
     @data = data
-    @prev = nil
     @next = nil
   end
 
   def to_s
-    data
+    "Node with value: #{@data}"
   end
 end
 
@@ -24,10 +23,11 @@ class SinglyLinkedList
     @size = 0
   end
 
-  def add(node)
+  def add(data)
+    node = Node.new(data)
     if @head
-      node.prev = @tail
       @tail.next = node
+      @tail = node
     else
       @head = node
     end
@@ -37,8 +37,8 @@ class SinglyLinkedList
 
   def search(term)
     node = @head
-    while !node.nil?
-      return node if node.to_s == term
+    while node
+      return node if node.data == term
 
       node = node.next
     end
@@ -46,62 +46,45 @@ class SinglyLinkedList
     nil
   end
 
-  def delete(term)
-    node = search(term)
-    return false if node.nil?
+  def find_first(&predicate)
+    return nil unless block_given?
 
-    if @size == 1
-      @head = nil
-      @tail = nil
-    elsif node.to_s == @head.to_s
-      @head = node.next
-      @head.prev = nil
-    else
-      node.prev&.next = node.next
-      node.next&.prev = node.prev
+    current = @head
+    while current
+      return current if predicate.call(current)
+
+      current = current.next
     end
-    @size -= 1
-    true
   end
 
-  def list
+  def delete(node)
+    return nil unless node
+
+    if node == @head
+      @head = if node.next.nil?
+                @tail = nil
+              else
+                head.next
+              end
+    else
+      tmp = @head
+      tmp = tmp.next while tmp && tmp.next != node
+      tmp.next = node.next if tmp
+    end
+    @size -= 1
+  end
+
+  def each
     node = @head
-    while !node.nil?
-      puts node
+    until node.nil?
+      yield node
       node = node.next
     end
   end
+
+  def print
+    each do |node|
+      puts node.data
+    end
+  end
 end
-
-linked_list = DoublyLinkedList.new
-node = Node.new('Hola')
-node1 = Node.new('Holi')
-
-linked_list.add(node)
-linked_list.add(node1)
-
-linked_list.list
-puts "----------------"
-puts "Total elements"
-puts linked_list.size
-
-puts "\n-----------------"
-puts "Searching Elements..."
-node_found = linked_list.search('Holi')
-if node_found.nil?
-  puts 'Node not found'
-else
-  puts node_found
-end
-
-puts "\n----------------"
-node2 = Node.new('Holi2')
-linked_list.add(node2)
-linked_list.list
-puts "Removing element"
-linked_list.delete('Holi')
-linked_list.list
-linked_list.delete('Holi2')
-linked_list.list
-linked_list.delete('Hola')
-linked_list.list
