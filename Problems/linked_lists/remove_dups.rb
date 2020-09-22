@@ -11,7 +11,7 @@ linked_list.add(5)
 linked_list.add(1)
 linked_list.add(5)
 
-def remove_dup_with_extra_space(linked_list)
+def remove_dup(linked_list)
   items = Set.new
 
   linked_list.each do |item|
@@ -24,6 +24,5 @@ def remove_dup_with_extra_space(linked_list)
   linked_list
 end
 
-
-new_linked_list = remove_dup_with_extra_space(linked_list)
+new_linked_list = remove_dup(linked_list)
 new_linked_list.print
