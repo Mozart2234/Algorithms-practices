@@ -27,3 +27,7 @@ I will be adding more elements to this index as soon as possible.
 - **Problems**
   - [x] Array/Hash Tables
   - [x] Linked Lists
+  - [x] Recursivity
+    - [x] Fibbonaci
+    - [x] Factorial
+    - [ ] Hanoi

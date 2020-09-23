@@ -23,3 +23,4 @@ end
 
 print_kth_to_last(linked_list.head, 2)
 print_kth_to_last(linked_list.head, 4)
+print_kth_to_last(linked_list.head, 1)
