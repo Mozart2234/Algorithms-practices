@@ -30,4 +30,4 @@ I will be adding more elements to this index as soon as possible.
   - [x] Recursivity
     - [x] Fibbonaci
     - [x] Factorial
-    - [ ] Hanoi
+    - [x] Hanoi
