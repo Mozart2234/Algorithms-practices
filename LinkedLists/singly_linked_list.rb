@@ -1,7 +1,6 @@
 # This class respresents a Node for a DoublyLinkedList
 class Node
-  attr_accessor :next
-  attr_reader :data
+  attr_accessor :next, :data
 
   def initialize(data)
     @data = data
