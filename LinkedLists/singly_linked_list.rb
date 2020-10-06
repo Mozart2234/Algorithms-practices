@@ -33,6 +33,8 @@ class SinglyLinkedList
     end
     @tail = node
     @size += 1
+
+    node
   end
 
   def search(term)
