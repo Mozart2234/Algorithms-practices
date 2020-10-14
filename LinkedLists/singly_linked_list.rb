@@ -2,7 +2,7 @@
 class Node
   attr_accessor :next, :data
 
-  def initialize(data)
+  def initialize(data = nil)
     @data = data
     @next = nil
   end

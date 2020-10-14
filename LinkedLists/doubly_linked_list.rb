@@ -3,7 +3,7 @@ class Node
   attr_accessor :prev, :next
   attr_reader :data
 
-  def initialize(data)
+  def initialize(data = nil)
     @data = data
     @prev = nil
     @next = nil
