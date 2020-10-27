@@ -19,9 +19,7 @@ end
 
 def palindrome?(node1, node2)
   while node1 && node2
-    if node1.data.downcase != node2.data.downcase
-      return false
-    end
+    return false if node1.data.downcase != node2.data.downcase
 
     node1 = node1.next
     node2 = node2.next
