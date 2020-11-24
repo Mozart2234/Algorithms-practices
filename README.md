@@ -24,6 +24,9 @@ I will be adding more elements to this index as soon as possible.
 - **Linked List**
   - [x] Singly Linked List
   - [x] Doubly Linked List
+- ** Stacks
+  - [x] Stack
+  - [x] Queue
 - **Problems**
   - [x] Array/Hash Tables
   - [x] Linked Lists
